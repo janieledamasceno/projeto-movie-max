@@ -1,0 +1,186 @@
+/* Declarando variáveis no CSS */
+:root{
+    --vermelho: purple;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTOS BASE DA INTERFACE*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Helvetica', sans-serif;
+    padding: 10px
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 45px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+header nav a:hover{
+    color: black;
+    background-color: rgb(165, 21, 165);;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* BARRA DE PESQUISA*/
+#divBusca{
+    width: 300px;
+    height: 32px;
+}
+
+#txtBusca{
+    float: left;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 191px;
+}
+
+#btnBusca{
+    border: none;
+    float: left;
+    height: 32px;
+    border-radius: 0 7px 7px 0;
+    width: 70px;
+    font-weight: bold;
+    background: rgb(165, 21, 165);
+}
+
+/* ELEMENTOS FILME PRINCIPAL*/
+.filme-principal{
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url(/img/capa-alice.jpg);
+    
+    height: 480px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: Georgia, serif;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 18px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+/* Características das miniaturas do carrosel - FILMES*/
+.topo-filmes{
+    padding: 40px 0 40px 0;
+    font-family: 'Verdana', Arial;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
+/* Características das miniaturas do carrosel - SÉRIES*/
+.topo-serie{
+    padding: 40px 0 40px 0;
+    font-family: 'Verdana', Arial;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.box-serie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-series{
+    margin-top: 5px;
+}
+/* Características das miniaturas do carrosel - DOCUMENTÁRIOS*/
+.topo-docs{
+    padding: 40px 0 40px 0;
+    font-family: 'Verdana', Arial;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.box-docs{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-docs{
+    margin-top: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 15px;
+}
