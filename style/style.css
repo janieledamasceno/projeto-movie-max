@@ -85,8 +85,8 @@ header nav a:hover{
 /* ELEMENTOS FILME PRINCIPAL*/
 .filme-principal {
     font-size: 18px;
-    background: linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url('/img/capa-alice.jpg');
-    
+    background-image: url('/img/capa-alice.jpg');
+
     height:480px;
     background-size: cover;
     
@@ -101,6 +101,11 @@ header nav a:hover{
     margin-top: 10px;
     margin-bottom: 40px;
     font-family: Georgia, serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.30);
+    border: none;
+    color: white;
+    border-radius: 5px;
 }
 
 .filme-principal .titulo{
@@ -195,3 +200,9 @@ footer{
     padding: 10px 0 10px 0;
     font-size: 15px;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
