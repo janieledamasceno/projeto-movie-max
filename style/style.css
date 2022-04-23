@@ -72,12 +72,22 @@ header nav a:hover{
     background: rgb(165, 21, 165);
 }
 
+#btnLogin{
+    border: none;
+    height: 40px;
+    border-radius: 7px;
+    width: 75px;
+    font-weight: bold;
+    background: rgb(165, 21, 165);
+    margin-right: 20px;
+}
+
 /* ELEMENTOS FILME PRINCIPAL*/
-.filme-principal{
+.filme-principal {
     font-size: 18px;
-    background: linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url(/img/capa-alice.jpg);
+    background: linear-gradient(rgba(0,0,0, .50),rgba(0,0,0, .50)100%), url('/img/capa-alice.jpg');
     
-    height: 480px;
+    height:480px;
     background-size: cover;
     
     display: flex;
@@ -86,6 +96,7 @@ header nav a:hover{
     align-items: flex-start;
 
 }
+
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
