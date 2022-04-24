@@ -84,7 +84,7 @@ header nav a:hover{
 
 /* ELEMENTOS FILME PRINCIPAL*/
 .filme-principal {
-    font-size: 18px;
+    font-size: 20px;
     background-image: url('../img/capa-alice.jpg');
 
     height:480px;
@@ -101,7 +101,7 @@ header nav a:hover{
     margin-top: 10px;
     margin-bottom: 40px;
     font-family: Georgia, serif;
-    font-size: 20px;
+    font-size: 22px;
     background-color: rgba(0, 0, 0, 0.30);
     border: none;
     color: white;
